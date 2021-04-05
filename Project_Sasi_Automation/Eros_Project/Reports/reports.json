@@ -1,0 +1,100 @@
+[
+  {
+    "uri": "C:/Users/dasarv2/RubymineProjects/Project_Veera/Eros_Project/features/scenarios/Xebia.feature",
+    "id": "retrieve-request-details-happy-path",
+    "keyword": "Feature",
+    "name": "Retrieve Request details happy path",
+    "description": "",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@get_call",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "retrieve-request-details-happy-path;user-can-successfully-retrieve-get-details",
+        "keyword": "Scenario",
+        "name": "User can successfully retrieve Get details",
+        "description": "",
+        "line": 5,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@get_call",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@get_status",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1145800
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "As_a_consumer_I_retrieve_all_the_get_info_from_typicode",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/my_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3182450500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "validate_the_response_as_an_Array",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/my_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42292400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I_validate_retrieved_response_successfully",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/my_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44801300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3432100
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
